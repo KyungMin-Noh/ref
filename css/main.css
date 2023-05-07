@@ -1,0 +1,23 @@
+#wrap{width: 1920px; margin: 0 auto;}
+
+#header_top{width: 1920px; height: 40px; background: #eee;}
+#header_nav{width: 1920px; height: 80px; background: #999;}
+#banner{width: 1920px; height: 520px; background: #eee;}
+#content01{width: 1920px; height: 562px; background: #999;}
+#content02{width: 1920px; height: 390px; background: #eee;}
+#content03{width: 1920px; height: 562px; background: #999;}
+#content04{width: 1920px; height: 490px; background: #eee;}
+#footer{width: 1920px; height: 200px; background: #eee;}
+
+.container{margin: 0 auto; width: 1280px;}
+
+/* header_top */
+.top_menu{margin-top: 10px;
+    width: 300px;
+    height: 16px;
+    float: right;}
+    
+.top_menu a{ float: left; padding-right: 20px; }
+.top_menu ul li{float: left; width: 20px; height: 20px; border: 1px solid #ccc; }
+.top_menu ul li:nth-child(2) {text-align: center; }
+.top_menu ul li:last-child{padding-right: 0;}

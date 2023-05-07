@@ -16,6 +16,7 @@
     width: 300px;
     height: 16px;
     float: right;}
+    
 .top_menu a{ float: left; padding-right: 20px; }
 .top_menu ul li{float: left; width: 20px; height: 20px; border: 1px solid #ccc; }
 .top_menu ul li:nth-child(2) {text-align: center; }

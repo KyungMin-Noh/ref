@@ -6,18 +6,18 @@
 #header_nav{width: 1920px; height: 80px; background: #fff;}
 #banner{width: 1920px; }
 #contents{width: 1920px; }
-#footer{width: 1920px; height: 200px; background: #fafafa; }
-
+#footer_nav{width: 1920px; height: 50px; background: #5e5e5e;}
+#footer_info{width: 1920px; height: 140px; background: #4d4d4d;}
 
 
 /* 컨텐츠 레이아웃 */
 #content01{width: 1920px; height: 200px; }
 #content02{width: 1920px; height: 390px; background: #f6fbff;}
-#content03{width: 1920px; height: 620px; background: #999;}
-#content04{width: 1920px; height: 428px; background: #eee;}
+#content03{width: 1920px; height: 620px; }
+#content04{width: 1920px; height: 470px; background: #f7f7f7;}
 
 /* 컨테이너 */
-.container{width: 1280px; margin: 0 auto; height: inherit; }
+.container{width: 1200px; margin: 0 auto; height: inherit; }
 
 
 /* header_top */
@@ -55,17 +55,17 @@
 
 /* content03 */
 .con3 {width: 1200px; height: 500px; padding-top: 60px; }
-.con3 .con3_1{float: left; width: 540px; height: 500px; border: 16px solid #0056b7; background: #fff; }
-.con3 .con3_1 .copy {width: 446px; margin: 0 auto; padding-top: 40px; }
+.con3 .con3_1{float: left; width: 500px; height: 460px; border: 20px solid #0056b7; background: #fff; }
+.con3 .con3_1 .copy {width: 440px; margin: 0 auto; padding-top: 40px; }
 .con3 .con3_1 .copy .tit {  font-size: 18px; font-weight: bold;  }
 .con3 .con3_1 .copy .tit li{ float: left;}
-.con3 .con3_1 .copy .tit li.btn {text-decoration: underline; float: right; font-size: 14px; color: #999;}
+.con3 .con3_1 .copy .tit li.btn {float: right; font-size: 14px; color: #999; text-decoration: underline;}
 
 
 .con3 .con3_1 .copy .sub{ padding-top: 60px;}
 .con3 .con3_1 .copy .sub li:last-child{padding-top: 20px; font-size: 12px; color: #999;}
 
-.con3 .con3_1 .point{width: 446px;margin: 0 auto; padding-top: 80px;}
+.con3 .con3_1 .point{width: 440px;margin: 0 auto; padding-top: 80px;}
 .con3 .con3_1 .point ul{  height: 140px; float: left; padding-right: 70px;  }
 .con3 .con3_1 .point ul:last-child{ padding-right: 0;}
 
@@ -76,4 +76,46 @@
 .con3 .con3_1 .point ul li:nth-child(3){ padding-bottom: 0px;}
 
 
-.con3 .con3_2{float: right; width: 540px; height: 500px; padding-left: 60px; background: #fff; }
+.con3 .con3_2{float: right; width: 600px; height: 500px; padding-left: 60px; }
+.con3_2 .copy{float:left; width: 600px; height: 76px;}
+.con3_2 .copy ul{width: 600px; float:left; padding-top: 20px;}
+.con3_2 .copy ul li{float: left;}
+.con3_2 .copy ul.tit {float:left; font-size: 18px; font-weight: bold;}
+.con3_2 .copy ul li.btn { float: right; font-size: 14px; color: #999; text-decoration: underline;}
+
+.con3_2 .results{width: 520px; float: left; padding-top: 50px; }
+.con3_2 .results ul{ height: 150px; padding-left: 40px;}
+.con3_2 .results ul:last-child{width: 600px; height: 150px; padding-top: 50px; }
+.con3_2 .results ul img{float: left;  padding-right: 40px;}
+.con3_2 .results ul li{padding-left: 40px;}
+.con3_2 .results ul li p{font-size: bold;}
+
+
+/* contents04 */
+.tab{ text-align: center; padding-top: 40px;}
+.tab a{ font-weight: bold; font-size: 20px; padding-right: 60px;}
+.tab a:last-child{ padding-right: 0px;}
+
+.con4{padding-top: 40px;}
+.con4 ul{float: left; width: 380px; height: 300px; background: #fff; border: 1px solid #e1e1e1; margin-right: 20px; }
+.con4 ul:last-child{float:right; margin-right: 0px; }
+.con4 ul li{ width: 340px; margin: 0 auto; padding-top: 20px;}
+.con4 ul li:last-child{padding-top:0px;}
+
+.con4 ul li.copy{width: 340px;  padding-top: 10px;}
+.con4 ul li.copy p{font-weight: bold; }
+.con4 ul li.copy span{ font-size: 14px; color: #999; }
+
+
+/* footer */
+.footer_nav{line-height: 50px; background: #5e5e5e;}
+.footer_nav a{padding-right: 20px;  color: #fafafa;}
+.footer_nav ul{float: right; width: 250px; height: 50px; background: #525252;}
+.footer_nav ul li{float: left; }
+.footer_nav ul li:nth-child(1){float: left; padding-left: 20px; color: #fff; }
+.footer_nav ul li:nth-child(2){padding-left: 76px; line-height: 50px; }
+.footer_nav ul li:last-child{width: 50px; height: 50px; float: right; }
+
+.footer_info{ padding-top:40px; }
+.footer_info a{float: left; padding-right:40px; }
+.footer_info ul{float: left; padding-top:20px; color: #fafafa; }

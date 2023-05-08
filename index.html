@@ -9,7 +9,8 @@
     <!-- css style -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="js/slick.min.css">
 </head>
 <body>
     <div id="wrap">
@@ -122,62 +123,230 @@
 
             <div id="content02">
                 <div class="container">
+                     
                     <div class="roll_list">
-                        <div class="list">
-                            <a href="/" class="prev"><span class="ir_pm">이전 이미지</span></a>
-                            <ul class="list01">
-                                <a href=""><img src="images/roll_img01.png" alt=""></a>
-                                <div class="copy">
-                                    <p>리츠추진현황</p>
-                                    <span>공공임대 리츠</span>
-                                    <ul>
-                                        <li>(개요)LH공동주택용지 매입, 공공임대 건설, 10년 임대 후 청산</li>
-                                        <li>(구조) 출자 8% (기금 6.4%, LH1.6%), 융자 92% (기금21%, 민간 41%, 보증금30%)</li>
-                                        <li>(LH)출자 1.6%(출자비중 20%), AMC, 매입확약</li>
-                                        <li>(실적) 5.3만호 ('14~'18)</li>
-                                        <li>(계획) 2,054호(원주흥업, 창원가포, 파주운정, 평택고덕)</li>
-                                        <li>(쟁점) 10년 공공임대주택의 분양전환가격 관련 민원(판교 등)에 따른 유형변경</li>
-                                    </ul>
-                                </div>
-                            </ul>
-                            <!-- //list01 -->
-                            <ul class="list02">
-                                <a href=""><img src="images/roll_img01.png" alt=""></a>
-                                <div class="copy">
-                                    <p>리츠추진현황</p>
-                                    <span>공공임대 리츠</span>
-                                    <ul>
-                                        <li>(개요)LH공동주택용지 매입, 공공임대 건설, 10년 임대 후 청산</li>
-                                        <li>(구조) 출자 8% (기금 6.4%, LH1.6%), 융자 92% (기금21%, 민간 41%, 보증금30%)</li>
-                                        <li>(LH)출자 1.6%(출자비중 20%), AMC, 매입확약</li>
-                                        <li>(실적) 5.3만호 ('14~'18)</li>
-                                        <li>(계획) 2,054호(원주흥업, 창원가포, 파주운정, 평택고덕)</li>
-                                        <li>(쟁점) 10년 공공임대주택의 분양전환가격 관련 민원(판교 등)에 따른 유형변경</li>
-                                    </ul>
-                                </div>
-                            </ul>
-                            <!-- //list02 -->
-                            <ul class="list03">
-                                <a href=""><img src="images/roll_img01.png" alt=""></a>
-                                <div class="copy">
-                                    <p>리츠추진현황</p>
-                                    <span>공공임대 리츠</span>
-                                    <ul>
-                                        <li>(개요)LH공동주택용지 매입, 공공임대 건설, 10년 임대 후 청산</li>
-                                        <li>(구조) 출자 8% (기금 6.4%, LH1.6%), 융자 92% (기금21%, 민간 41%, 보증금30%)</li>
-                                        <li>(LH)출자 1.6%(출자비중 20%), AMC, 매입확약</li>
-                                        <li>(실적) 5.3만호 ('14~'18)</li>
-                                        <li>(계획) 2,054호(원주흥업, 창원가포, 파주운정, 평택고덕)</li>
-                                        <li>(쟁점) 10년 공공임대주택의 분양전환가격 관련 민원(판교 등)에 따른 유형변경</li>
-                                    </ul>
-                                </div>
-                            </ul>
-                            <!-- //list03 -->
-                            <a href="/" class="next"><span class="ir_pm">다음 이미지</span></a>
-                        </div>
-                        
-                        
+                        <a href="#" class="prev"><span class="ir_pm">이전 이미지</span></a>
+                        <ul>
+                            <li class="roll_img01"><a href="#"><img src="images/roll_img_01.png" alt="roll_img_01"></a></li>
+                            <li class="roll_img02"><a href="#"><img src="images/roll_img_02.png" alt="roll_img_02"></a></li>
+                            <li class="roll_img03"><a href="#"><img src="images/roll_img_03.png" alt="roll_img_03"></a></li>
+                        </ul>
+                        <a href="#" class="next"><span class="ir_pm">다음 이미지</span></a> 
                     </div>
+                    <!-- -->
+
+                    
+                    <!-- 
+                    <div class="roll_list">
+                        <div><a href="#"><img src="images/roll_img_01.png" alt="roll_img_01"></a></div>
+                        <div><a href="#"><img src="images/roll_img_02.png" alt="roll_img_02"></a></div>
+                        <div><a href="#"><img src="images/roll_img_03.png" alt="roll_img_03"></a></div>
+                    </div>
+                    -->
+
+
+
+                    <!-- 슬릭
+                    <div class="ban slick-initialized slick-slider slick-dotted">
+                        <button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;">Previous</button>
+                        <div class="slick-list draggable">
+                            <div class="slick-track" style="opacity: 1; width: 6930px; transform: translate3d(-1320px, 0px, 0px);">
+                            <div class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 310px;">
+                                <div>
+                                <div style="width: 100%; display: inline-block;"><a href="#" tabindex="-1"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1" style="width: 310px;">
+                            <div>
+                                <div style="width: 100%; display: inline-block;">
+                                    <a href="#" tabindex="-1"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 310px;">
+                            <div>
+                                <div style="width: 100%; display: inline-block;">
+                                    <a href="#" tabindex="-1"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slide" data-slick-index="0" aria-hidden="true" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00" style="width: 310px;" tabindex="-1"><div><div style="width: 100%; display: inline-block;">
+                                    <a href="#" tabindex="-1"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slide slick-current slick-active" data-slick-index="1" aria-hidden="false" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01" style="width: 310px;">
+                            <div>
+                                <div style="width: 100%; display: inline-block;">
+                                    <a href="#" tabindex="0"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02" style="width: 310px;">
+                            <div>
+                                <div style="width: 100%; display: inline-block;">
+                                    <a href="#" tabindex="0"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slide slick-active" data-slick-index="3" aria-hidden="false" role="tabpanel" id="slick-slide03" aria-describedby="slick-slide-control03" style="width: 310px;">
+                            <div>
+                                <div style="width: 100%; display: inline-block;">
+                                    <a href="#" tabindex="0"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slide" data-slick-index="4" aria-hidden="true" role="tabpanel" id="slick-slide04" aria-describedby="slick-slide-control04" style="width: 310px;" tabindex="-1">
+                            <div>
+                            <div style="width: 100%; display: inline-block;">
+                        <a href="#" tabindex="-1"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-slide" data-slick-index="5" aria-hidden="true" role="tabpanel" id="slick-slide05" aria-describedby="slick-slide-control05" style="width: 310px;" tabindex="-1">
+                <div>
+                    <div style="width: 100%; display: inline-block;"><a href="#" tabindex="-1"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-slide" data-slick-index="6" aria-hidden="true" role="tabpanel" id="slick-slide06" aria-describedby="slick-slide-control06" style="width: 310px;" tabindex="-1">
+                <div>
+                    <div style="width: 100%; display: inline-block;"><a href="#" tabindex="-1"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-slide" data-slick-index="7" aria-hidden="true" role="tabpanel" id="slick-slide07" aria-describedby="slick-slide-control07" style="width: 310px;" tabindex="-1">
+                <div>
+                    <div style="width: 100%; display: inline-block;"><a href="#" tabindex="-1"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-slide" data-slick-index="8" aria-hidden="true" role="tabpanel" id="slick-slide08" aria-describedby="slick-slide-control08" style="width: 310px;" tabindex="-1">
+                <div>
+                    <div style="width: 100%; display: inline-block;">
+                        <a href="#" tabindex="-1"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-slide slick-cloned" data-slick-index="9" aria-hidden="true" tabindex="-1" style="width: 310px;">
+                <div>
+                    <div style="width: 100%; display: inline-block;">
+                        <a href="#" tabindex="-1"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-slide slick-cloned" data-slick-index="10" aria-hidden="true" tabindex="-1" style="width: 310px;">
+                <div>
+                    <div style="width: 100%; display: inline-block;">
+                        <a href="#" tabindex="-1"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-slide slick-cloned" data-slick-index="11" aria-hidden="true" tabindex="-1" style="width: 310px;">
+                <div>
+                    <div style="width: 100%; display: inline-block;">
+                        <a href="#" tabindex="-1"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-slide slick-cloned" data-slick-index="12" aria-hidden="true" tabindex="-1" style="width: 310px;">
+                <div>
+                    <div style="width: 100%; display: inline-block;">
+                        <a href="#" tabindex="-1"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-slide slick-cloned" data-slick-index="13" aria-hidden="true" tabindex="-1" style="width: 310px;">
+                <div>
+                    <div style="width: 100%; display: inline-block;">
+                        <a href="#" tabindex="-1"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-slide slick-cloned" data-slick-index="14" aria-hidden="true" tabindex="-1" style="width: 310px;">
+                <div>
+                    <div style="width: 100%; display: inline-block;">
+                        <a href="#" tabindex="-1">
+                            <img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide slick-cloned" data-slick-index="15" aria-hidden="true" tabindex="-1" style="width: 310px;">
+                    <div>
+                        <div style="width: 100%; display: inline-block;">
+                            <a href="#" tabindex="-1"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide slick-cloned" data-slick-index="16" aria-hidden="true" tabindex="-1" style="width: 310px;">
+                    <div>
+                        <div style="width: 100%; display: inline-block;">
+                            <a href="#" tabindex="-1"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide slick-cloned" data-slick-index="17" aria-hidden="true" tabindex="-1" style="width: 310px;">
+                    <div>
+                        <div style="width: 100%; display: inline-block;">
+                            <a href="#" tabindex="-1"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;">Next</button>
+        <ul class="slick-dots" style="display: block;" role="tablist">
+            <li class="" role="presentation">
+                <button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 3" tabindex="-1">1</button>
+            </li>
+            <li role="presentation" class="slick-active">
+                <button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 3" tabindex="0" aria-selected="true">2</button>
+            </li>
+            <li role="presentation" class="">
+                <button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 3" tabindex="-1">3</button>
+            </li>
+            <li role="presentation" class="">
+                <button type="button" role="tab" id="slick-slide-control03" aria-controls="slick-slide03" aria-label="4 of 3" tabindex="-1">4</button>
+            </li>
+            <li role="presentation" class="">
+                <button type="button" role="tab" id="slick-slide-control04" aria-controls="slick-slide04" aria-label="5 of 3" tabindex="-1">5</button>
+            </li>
+            <li role="presentation" class="">
+                <button type="button" role="tab" id="slick-slide-control05" aria-controls="slick-slide05" aria-label="6 of 3" tabindex="-1">6</button>
+            </li>
+            <li role="presentation" class="">
+                <button type="button" role="tab" id="slick-slide-control06" aria-controls="slick-slide06" aria-label="7 of 3" tabindex="-1">7</button>
+            </li>
+            <li role="presentation" class="">
+                <button type="button" role="tab" id="slick-slide-control07" aria-controls="slick-slide07" aria-label="8 of 3" tabindex="-1">8</button>
+            </li>
+            <li role="presentation" class="">
+                <button type="button" role="tab" id="slick-slide-control08" aria-controls="slick-slide08" aria-label="9 of 3" tabindex="-1">9</button>
+            </li>
+        </ul>
+    </div>
+     -->
+                   
+                    <!--  
+                    <img src="images/roll_img01.png" alt="roll_img01">
+                    <div class="copy">
+                        <p>리츠추진현황</p>
+                        <span>공공임대 리츠</span>
+                        <ul class="text">
+                            <li>(개요)LH공동주택용지 매입, 공공임대 건설, 10년 임대 후 청산</li>
+                            <li>(구조) 출자 8% (기금 6.4%, LH1.6%), 융자 92% (기금21%, 민간 41%, 보증금30%)</li>
+                            <li>(LH)출자 1.6%(출자비중 20%), AMC, 매입확약</li>
+                            <li>(실적) 5.3만호 ('14~'18)</li>
+                            <li>(계획) 2,054호(원주흥업, 창원가포, 파주운정, 평택고덕)</li>
+                            <li>(쟁점) 10년 공공임대주택의 분양전환가격 관련 민원(판교 등)에 따른 유형변경</li>
+                        </ul>
+                    </div>
+                    -->
+                            
+
+                        
+                    
                 </div>
             </div>
             <!-- //content02 -->
@@ -330,6 +499,7 @@
 
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script type="text/javascript">
         //버튼을 클릭하면 전체 메뉴를 보이게 하세요.
         $(".gnb .menu li").click(function(){

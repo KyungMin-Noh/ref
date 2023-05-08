@@ -2,7 +2,6 @@
 
 /* 레이아웃 */
 #wrap{width: 1920px; margin: 0 auto;}
-#header{}
 #header_top{position: absolute;
     width: 1920px;
     height: 40px;}
@@ -72,22 +71,52 @@
 .boxes ul li span { text-align: center; padding-top: 40px;}
 
 /* content02 */
-.roll_list{ padding-top: 60px; margin: 0;}
-.roll_list .list a {}
-.roll_list .list a.prev{position: absolute;  width: 20px; height: 40px;  background: url(../images/pre_arrow.png)}
-.roll_list .list a.next{position: absolute; width: 20px; height: 40px;  background: url(../images/next_arrow.png)}
+/*  
+.roll_list {position: relative; width: 1200px; height: 270px; padding: 60px 0;}
+.roll_list a.prev {position: absolute; top: 180px; width: 20px; height: 40px; background: url(../images/pre_arrow.png);} 
+.roll_list a.next {position: absolute; right: 0px; top: 180px; width: 20px; height: 40px; background: url(../images/next_arrow.png);}
+.roll_list ul {width: 1120px; height: 270px; margin: 0 auto; overflow: hidden;}
+.roll_list ul li {float: left; }
 
-.roll_list .list {width: 1120px; height: 270px; margin: 0 auto; }
-.roll_list .list ul{width: 1120px; height: 270px; margin: 0 auto; overflow: hidden;}
-.roll_list .list ul img{float: left;    padding-right: 60px; }
-.roll_list .list ul .copy{float: left; width: 700px; height: 270px; }
-.roll_list .list ul .copy p{ font-weight: bold; font-size: 20px; font-weight: bold; padding-bottom: 40px;}
-.roll_list .list ul .copy span{font-weight: bold;  font-size: 16px; font-weight: bold; padding-top: 40px; }
-.roll_list .list ul .copy ul{line-height:24px; padding-top: 20px;}
+.roll_list ul li.roll_img01 {text-align: left;}
+.roll_list ul li.roll_img02 {text-align: center;}
+.roll_list ul li.roll_img03 {text-align: right;}
+.roll_list ul li img {border: 4px solid #dcdcdc;}
+*/
+
+
+/* 슬릭 배너 */
+.roll_list {position: relative; width: 1120px; height: 270px; padding-top: 60px; margin: 0 auto; overflow: hidden;}
+.roll_list .slick-prev {position: absolute; top: 180px; width: 20px; height: 40px; background: url(../images/pre_arrow.png); }
+.roll_list .slick-next {position: absolute; right: 0px; top: 180px; width: 20px; height: 40px; background: url(../images/next_arrow.png);}
+.roll_list div{width: 1120px; height: 270px; margin: 0 auto;}
+.roll_list img {border: 4px solid #dcdcdc; overflow: hidden;}
+.roll_list img:hover {border-color: #98bcdc;}
+.roll_list .slick-slide {margin: 10px;}
+.roll_list .slick-dots {position: absolute; bottom: 15px; display: block; width: 100%; text-align: center;}
+.roll_list .slick-dots li {display: inline-block; width: 15px; height: 15px; margin: 5px;}
+.roll_list .slick-dots li button {font-size: 0; line-height: 0; display: block; width: 15px; height: 15px; cursor: pointer; background: #5dbfeb; border-radius: 50%;}
+.roll_list .slick-dots li.slick-active button {background: #2b91c8;}
+
+
+/* 
+.roll_list{width: 1200px; height: 270px; padding-top: 60px; margin: 0;}
+.roll_list a.prev{position: absolute; float:left; width: 20px; height: 40px; background: url(../images/pre_arrow.png);}
+.roll_list a.next{position: absolute; width: 20px; height: 40px; background: url(../images/next_arrow.png);}
+.roll_list ul.list {width: 1120px; height: 270px; margin: 0 auto; overflow: hidden; }
+.roll_list ul.list li{float:left; width: 1120px; height: 270px; background: #999;}
+.roll_list ul.list .roll_img01{width: 1200px; height: 270px; margin: 0 auto;}
+.roll_list ul.list .roll_img01 img{float: left; width: 360px; height: 270px; }
+.roll_list ul.list .roll_img01 .copy {float: left; width: 700px; height: 270px; margin-left: 60px;}
+.roll_list ul.list .roll_img01 .copy p{font-weight: bold; font-size: 20px; font-weight: bold; padding-bottom: 40px;}
+.roll_list ul.list .roll_img01 .copy span{font-weight: bold;  font-size: 16px; font-weight: bold; padding-top: 40px; }
+.roll_list ul.list .roll_img01 .copy .text{ padding-top: 20px; float: right; width: 700px; height: 156px;}
+.roll_list ul.list .roll_img01 .copy .text li{line-height: 24px; }
+
 
 .roll_list .list02{ display:none; padding-left: 60px; }
 .roll_list .list03{ display:none; padding-left: 60px; }
-
+*/
 
 
 

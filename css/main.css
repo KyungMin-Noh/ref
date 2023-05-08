@@ -2,9 +2,15 @@
 
 /* 레이아웃 */
 #wrap{width: 1920px; margin: 0 auto;}
-#header_top{width: 1920px; height: 40px; background: #fafafa;}
-#header_nav{width: 1920px; height: 80px; background: #fff;}
-#banner{width: 1920px; }
+#header{}
+#header_top{position: absolute;
+    width: 1920px;
+    height: 40px;}
+#header_nav{top: 40px;
+    width: 1920px;
+    height: 80px;
+    position: absolute;}
+#banner{width: 1920px; height: 630px; background: url(/images/pc_ban01.png);}
 #contents{width: 1920px; }
 #footer_nav{width: 1920px; height: 50px; background: #5e5e5e;}
 #footer_info{width: 1920px; height: 140px; background: #4d4d4d;}
@@ -21,20 +27,40 @@
 
 
 /* header_top */
-.top_menu{ width: 300px;  height: 16px;  float: right; }    
-.top_menu a{float: left; padding-right: 20px; line-height: 40px;}
+.top_menu{ float: right; }    
+.top_menu a{float: left; padding-left: 20px; line-height: 40px; color: #eee;}
 
 .gnb{ margin: 0 auto;}
-.gnb a{float: left;}
-.gnb .menu{float: right; margin-left: 60px;}
-.gnb .menu ul{float: right; }
-.gnb .menu ul li{float: left; line-height: 80px; padding-right: 60px; font-size: 16px;}
+.gnb a{float: left; width: 150px; height: 58px; padding-top: 8px; }
+.gnb .menu{float: right; line-height: 80px; color: #eee;}
+.gnb .menu ul{float: left; padding-left: 60px; font-size: 16px; }
+.gnb .menu a{float: left; width: 24px; padding-left: 40px;}
 
-.notice_list {position: absolute; TOP: 690PX; left: 28%; width: 1540px; height: 60px; background: #0056b7;}
-.notice_list ul{ padding-left: 40px; line-height: 60px; color: #fff;   }
+.gnb .menu_all {display: none; width: 1280px; height: 240px; background: #999; padding-top: 40px;}
+.gnb .menu_all ul{float: right; margin-left: 10px; }
+.gnb .menu_all ul li{ line-height: 40px; padding-right: 60px; font-size: 16px;}
+
+.notice_list {position: absolute; TOP: 570PX; left: 26.8%; width: 1556px; height: 60px; background: #0056b7;}
+.notice_list ul{ padding-left: 40px; line-height: 60px; color: #fff; }
 
 /* banner */
+.ban .ban_copy{position: absolute; color: #fff; left: 360px; top: 240px;}
+.ban .ban_copy li {line-height: 24px;}
+.ban .ban_copy li:nth-child(1) {font-size: 30px; padding-bottom: 20px; }
+.ban .ban_copy .ghost-button{
+    display: inline-block;
+    position: relative;
+    padding: 10px 20px;
+    margin-top: 40px;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+
 .ban{width: 1920px; height: 630px; margin: 0 auto;}
+
 .ban img{width: 1920px; height: 630px;}
 
 /* content01 */
@@ -46,11 +72,37 @@
 .boxes ul li span { text-align: center; padding-top: 40px;}
 
 /* content02 */
-.roll_list{width: 1120px; height: 270px; padding-top: 40px; margin: 0 auto;}
-.roll_list .list_copy{ float: right; padding-left: 60px; width: 700px;}
-.roll_list .list_copy p{ font-weight: bold; font-size: 20px; font-weight: bold; padding-bottom: 40px;}
-.roll_list .list_copy span{font-weight: bold;  font-size: 16px; font-weight: bold; padding-top: 40px; }
-.roll_list .list_copy ul{line-height:24px; padding-top: 16px;}
+.roll_list{ padding-top: 60px; margin: 0;}
+.roll_list .list a {}
+.roll_list .list a.prev{position: absolute;  width: 20px; height: 40px;  background: url(../images/pre_arrow.png)}
+.roll_list .list a.next{position: absolute; width: 20px; height: 40px;  background: url(../images/next_arrow.png)}
+
+.roll_list .list {width: 1120px; height: 270px; margin: 0 auto; }
+.roll_list .list ul{width: 1120px; height: 270px; margin: 0 auto; overflow: hidden;}
+.roll_list .list ul img{float: left;    padding-right: 60px; }
+.roll_list .list ul .copy{float: left; width: 700px; height: 270px; }
+.roll_list .list ul .copy p{ font-weight: bold; font-size: 20px; font-weight: bold; padding-bottom: 40px;}
+.roll_list .list ul .copy span{font-weight: bold;  font-size: 16px; font-weight: bold; padding-top: 40px; }
+.roll_list .list ul .copy ul{line-height:24px; padding-top: 20px;}
+
+.roll_list .list02{ display:none; padding-left: 60px; }
+.roll_list .list03{ display:none; padding-left: 60px; }
+
+
+
+
+
+
+/* 
+.ban{position: relative; top: 0; width: 1920px; height: 400px; }
+
+.ban ul li{float: left;}
+.ban ul li.ban_img1{text-align: left;}
+.ban ul li.ban_img2{text-align: center;}
+.ban ul li.ban_img3{text-align: right;}
+ */
+
+
 
 
 /* content03 */
@@ -65,8 +117,8 @@
 .con3 .con3_1 .copy .sub{ padding-top: 60px;}
 .con3 .con3_1 .copy .sub li:last-child{padding-top: 20px; font-size: 12px; color: #999;}
 
-.con3 .con3_1 .point{width: 440px;margin: 0 auto; padding-top: 80px;}
-.con3 .con3_1 .point ul{  height: 140px; float: left; padding-right: 70px;  }
+.con3 .con3_1 .point{width: 440px; height: 140px; margin: 0 auto; padding-top: 80px;}
+.con3 .con3_1 .point ul{float: left; padding-right: 70px;  }
 .con3 .con3_1 .point ul:last-child{ padding-right: 0;}
 
 .con3 .con3_1 .point ul li{ text-align: center; padding-bottom: 10px;}
@@ -78,17 +130,23 @@
 
 .con3 .con3_2{float: right; width: 600px; height: 500px; padding-left: 60px; }
 .con3_2 .copy{float:left; width: 600px; height: 76px;}
-.con3_2 .copy ul{width: 600px; float:left; padding-top: 20px;}
-.con3_2 .copy ul li{float: left;}
-.con3_2 .copy ul.tit {float:left; font-size: 18px; font-weight: bold;}
+
+.con3_2 .copy ul li{float: left; padding-top: 20px;}
+.con3_2 .copy ul.tit {font-size: 18px; font-weight: bold;}
 .con3_2 .copy ul li.btn { float: right; font-size: 14px; color: #999; text-decoration: underline;}
 
-.con3_2 .results{width: 520px; float: left; padding-top: 50px; }
-.con3_2 .results ul{ height: 150px; padding-left: 40px;}
-.con3_2 .results ul:last-child{width: 600px; height: 150px; padding-top: 50px; }
-.con3_2 .results ul img{float: left;  padding-right: 40px;}
-.con3_2 .results ul li{padding-left: 40px;}
-.con3_2 .results ul li p{font-size: bold;}
+.con3_2 .results{width: 520px; float: left; padding-top:40px; margin: 0 50px;}
+.con3_2 .results ul{width: 520px; height: 160px; }
+.con3_2 .results ul:last-child{width: 520px; height: 150px; padding-top: 50px; }
+
+.con3_2 .results ul li.img{float: left;}
+.con3_2 .results ul li.copy{float: right; width: 350px; height: 150px;}
+.con3_2 .results ul li.copy p{ font-weight: bold;}
+
+.con3_2 .results ul li.copy b{ font-size: 40px; color: #eb1c22;}
+.con3_2 .results ul li.copy span{padding-top: 10px; }
+.con3_2 .results ul li.copy span:nth-child(1){font-weight: bold; }
+
 
 
 /* contents04 */

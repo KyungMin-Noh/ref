@@ -30,11 +30,13 @@
 .top_menu a{float: left; padding-left: 20px; line-height: 40px; color: #eee;}
 
 .gnb{ margin: 0 auto;}
-.gnb a{float: left; width: 150px; height: 58px; padding-top: 8px; }
+/* .gnb a{float: left; width: 150px; height: 58px; padding-top: 8px; } */
 .gnb .menu{float: right; line-height: 80px; color: #eee;}
-.gnb .menu ul{float: left; padding-left: 60px; font-size: 16px; }
-.gnb .menu a{float: left; width: 24px; padding-left: 40px;}
+.gnb .menu ul{float: left; margin-left: 60px; font-size: 18px; }
+.gnb .menu ul:nth-child() { margin-left: 0;}
 
+.gnb .menu a{width: 24px; height: 24px; margin-left: 40px;}
+.gnb .menu a img{padding-top: 30px; }
 .gnb .menu_all {display: none; width: 1280px; height: 240px; background: #999; padding-top: 40px;}
 .gnb .menu_all ul{float: right; margin-left: 10px; }
 .gnb .menu_all ul li{ line-height: 40px; padding-right: 60px; font-size: 16px;}
@@ -76,8 +78,7 @@
 .roll_list a.prev {position: absolute; top: 180px; width: 20px; height: 40px; background: url(../images/pre_arrow.png);} 
 .roll_list a.next {position: absolute; right: 0px; top: 180px; width: 20px; height: 40px; background: url(../images/next_arrow.png);}
 .roll_list ul {width: 1120px; height: 270px; margin: 0 auto; overflow: hidden;}
-.roll_list ul li {float: left; }
-
+.roll_list ul li {float: left; width: 1120px;}
 .roll_list ul li.roll_img01 {text-align: left;}
 .roll_list ul li.roll_img02 {text-align: center;}
 .roll_list ul li.roll_img03 {text-align: right;}
@@ -86,50 +87,23 @@
 
 
 /* 슬릭 배너 */
-.roll_list {position: relative; width: 1120px; height: 270px; padding-top: 60px; margin: 0 auto; overflow: hidden;}
-.roll_list .slick-prev {position: absolute; top: 180px; width: 20px; height: 40px; background: url(../images/pre_arrow.png); }
-.roll_list .slick-next {position: absolute; right: 0px; top: 180px; width: 20px; height: 40px; background: url(../images/next_arrow.png);}
-.roll_list div{width: 1120px; height: 270px; margin: 0 auto;}
-.roll_list img {border: 4px solid #dcdcdc; overflow: hidden;}
-.roll_list img:hover {border-color: #98bcdc;}
-.roll_list .slick-slide {margin: 10px;}
-.roll_list .slick-dots {position: absolute; bottom: 15px; display: block; width: 100%; text-align: center;}
-.roll_list .slick-dots li {display: inline-block; width: 15px; height: 15px; margin: 5px;}
-.roll_list .slick-dots li button {font-size: 0; line-height: 0; display: block; width: 15px; height: 15px; cursor: pointer; background: #5dbfeb; border-radius: 50%;}
+.roll_list {position: relative; width: 1200px; height: 390px; padding: 60px 0; margin: 0 auto; }
+
+.roll_list .slick-prev {position: absolute; top: 180px; width: 20px; height: 40px; background: url(../images/pre_arrow.png); text-indent: -9990px;} 
+.roll_list .slick-next {position: absolute; right: 0px; top: 180px; width: 20px; height: 40px; background: url(../images/next_arrow.png); text-indent: -9990px;}
+
+.roll_list div {width: 1120px; height: 270px; margin: 0 auto;}
+.roll_list div img{float: left; width: 360px; height: 270px; }
+.roll_list div .copy {float: left; width: 700px; height: 270px; margin-left: 60px;}
+.roll_list div .copy strong{font-weight: bold; font-size: 20px; font-weight: bold; padding-bottom: 40px;}
+.roll_list div .copy p{font-weight: bold;  font-size: 16px; font-weight: bold; padding-top: 40px; }
+.roll_list div .copy .text{ padding-top: 20px; float: right; width: 700px; height: 156px;}
+.roll_list div .copy .text li{line-height: 24px; }
+
+.roll_list .slick-dots {position: absolute; display: block; top: 60px; right: 0; width: 96px; /*bottom: 16px; text-align: center;*/ }
+.roll_list .slick-dots li {display: inline-block; width: 16px; height: 16px; margin: 6px;}
+.roll_list .slick-dots li button {font-size: 0; line-height: 0; display: block; width: 16px; height: 16px; cursor: pointer; background: #5dbfeb; border-radius: 50%;}
 .roll_list .slick-dots li.slick-active button {background: #2b91c8;}
-
-
-/* 
-.roll_list{width: 1200px; height: 270px; padding-top: 60px; margin: 0;}
-.roll_list a.prev{position: absolute; float:left; width: 20px; height: 40px; background: url(../images/pre_arrow.png);}
-.roll_list a.next{position: absolute; width: 20px; height: 40px; background: url(../images/next_arrow.png);}
-.roll_list ul.list {width: 1120px; height: 270px; margin: 0 auto; overflow: hidden; }
-.roll_list ul.list li{float:left; width: 1120px; height: 270px; background: #999;}
-.roll_list ul.list .roll_img01{width: 1200px; height: 270px; margin: 0 auto;}
-.roll_list ul.list .roll_img01 img{float: left; width: 360px; height: 270px; }
-.roll_list ul.list .roll_img01 .copy {float: left; width: 700px; height: 270px; margin-left: 60px;}
-.roll_list ul.list .roll_img01 .copy p{font-weight: bold; font-size: 20px; font-weight: bold; padding-bottom: 40px;}
-.roll_list ul.list .roll_img01 .copy span{font-weight: bold;  font-size: 16px; font-weight: bold; padding-top: 40px; }
-.roll_list ul.list .roll_img01 .copy .text{ padding-top: 20px; float: right; width: 700px; height: 156px;}
-.roll_list ul.list .roll_img01 .copy .text li{line-height: 24px; }
-
-
-.roll_list .list02{ display:none; padding-left: 60px; }
-.roll_list .list03{ display:none; padding-left: 60px; }
-*/
-
-
-
-
-
-/* 
-.ban{position: relative; top: 0; width: 1920px; height: 400px; }
-
-.ban ul li{float: left;}
-.ban ul li.ban_img1{text-align: left;}
-.ban ul li.ban_img2{text-align: center;}
-.ban ul li.ban_img3{text-align: right;}
- */
 
 
 
@@ -182,6 +156,7 @@
 .tab{ text-align: center; padding-top: 40px;}
 .tab a{ font-weight: bold; font-size: 20px; padding-right: 60px;}
 .tab a:last-child{ padding-right: 0px;}
+.tab a:hover{color: #0056b7;}
 
 .con4{padding-top: 40px;}
 .con4 ul{float: left; width: 380px; height: 300px; background: #fff; border: 1px solid #e1e1e1; margin-right: 20px; }
@@ -197,11 +172,21 @@
 /* footer */
 .footer_nav{line-height: 50px; background: #5e5e5e;}
 .footer_nav a{padding-right: 20px;  color: #fafafa;}
-.footer_nav ul{float: right; width: 250px; height: 50px; background: #525252;}
-.footer_nav ul li{float: left; }
-.footer_nav ul li:nth-child(1){float: left; padding-left: 20px; color: #fff; }
+.footer_nav .site{float: right; width: 250px; height: 50px; background: #525252;}
+.footer_nav .site ul {float: left; width: 160px; height: 50px; padding:0 20px;}
+.footer_nav .site ul li{float: left; color: #fff; }
+.footer_nav .site ul li:last-child{float: right; padding-top: 16px;}
+
+.footer_nav .site a {float: right; padding-right: 0;}
+.footer_nav .site a img{float: right;}
+
+/*  
+vscode-file://vscode-app/c:/Users/use/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html
 .footer_nav ul li:nth-child(2){padding-left: 76px; line-height: 50px; }
 .footer_nav ul li:last-child{width: 50px; height: 50px; float: right; }
+*/
+/* .footer_nav ul.site a:last-child{ float: right; padding-right:0; } */
+
 
 .footer_info{ padding-top:40px; }
 .footer_info a{float: left; padding-right:40px; }

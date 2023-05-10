@@ -2,9 +2,12 @@
 
 /* 레이아웃 */
 #wrap{width: 1920px; margin: 0 auto;}
+#header{position: absolute; width: 1920px; height: 120px; z-index: 1;}
+/*  
 #header_top{position: absolute; width: 1920px; height: 40px;}
 #header_nav{position: absolute; top: 40px; width: 1920px; height: 80px;}
-#notice_list{width: 1920px; height: 60px; }
+*/
+#notice{position: absolute; top: 570px; z-index: 1; width: 1920px; height: 60px;} 
 #banner{width: 1920px; height: 630px; }
 #contents{width: 1920px; }
 #footer_nav{width: 1920px; height: 50px; background: #5e5e5e;}
@@ -15,13 +18,16 @@
 #content01{width: 1920px; height: 270px; }
 #content02{width: 1920px; height: 390px; background: #f6fbff;}
 #content03{width: 1920px; height: 620px; }
-#content04{width: 1920px; height: 470px; background: #f7f7f7;}
+#content04{width: 1920px; height: 490px; background: #f7f7f7;}
 
 /* 컨테이너 */
 .container{width: 1200px; margin: 0 auto; height: inherit; }
 
 
 /* header_top */
+.header_top{width: 1200px; height: 40px; } 
+.header_nav{width: 1200px; height: 80px; top: 40px;}
+
 .top_menu{ float: right; }    
 .top_menu a{float: left; padding-left: 20px; line-height: 40px; color: #eee;}
 
@@ -39,14 +45,14 @@
 
 
 /* banner */
-.ban{position:relative; width: 1920px; height: 630px; margin: 0 auto;}
+.ban{ width: 1920px; height: 630px; margin: 0 auto;}
 
-.ban .ban_copy{position: absolute; color: #fff; left: 360px; top: 240px;}
-.ban .ban_copy li {line-height: 24px;}
-.ban .ban_copy li:nth-child(1) {font-size: 30px; padding-bottom: 20px; }
-.ban .ban_copy .ghost-button{
-    display: inline-block;
-    position: relative;
+.ban .ban_copy{position: absolute; float: left; z-index: 1;}
+.ban .ban_copy ul{position: absolute; width: 760px; height: 135px; top: 240px; left: 360px;}
+.ban .ban_copy ul li {line-height: 24px; color: #fff; float: left; }
+.ban .ban_copy ul li:nth-child(1) {font-size: 30px; padding-bottom: 20px; }
+.ban .ban_copy ul .ghost-button{
+    float: left;
     padding: 10px 20px;
     margin-top: 40px;
     border: 1px solid #fff;
@@ -54,14 +60,13 @@
     text-align: center;
     text-decoration: none;
 }
- */
-.notice {position: absolute; TOP: 570PX; }
-.notice ul{padding-left: 40px; line-height: 60px; color: #fff; margin-left: 320px; width: 1560px; height: 60px;  background: #0056b7;}
+.notice_list {position: absolute; width: 1920px; height: 60px;  }
+.notice_list ul{margin-left: 360px; line-height: 60px; color: #fff; width: 1560px; height: 60px;  background: #0056b7;}
+.notice_list ul li{float: left; padding-left: 40px;}
 
 .ban .slick-prev {position: absolute; top: 240px; left: 280px; width: 20px; height: 40px; background: url(../images/pre_arrow.png); text-indent: -9990px;} 
 .ban .slick-next {position: absolute; top: 240px; right: 280px; width: 20px; height: 40px; background: url(../images/next_arrow.png); text-indent: -9990px;}
-.ban div {position: absolute; width: 1920px; height: 630px; margin: 0 auto;}
-.ban div img{float:left; width: 1920px; height: 630px;}
+.ban img{float:left; width: 1920px; height: 630px;}
 
 .ban .slick-dots {position: absolute; display: block; top: 480px; left: 350px;  width: 96px;}
 .ban .slick-dots li {display: inline-block; width: 16px; height: 16px; margin: 6px;}
@@ -99,9 +104,9 @@
 .roll_list div img{float: left; width: 360px; height: 270px; }
 .roll_list div .copy {float: left; width: 700px; height: 270px; margin-left: 60px;}
 .roll_list div .copy strong{font-weight: bold; font-size: 20px; font-weight: bold; padding-bottom: 40px;}
-.roll_list div .copy p{font-weight: bold;  font-size: 16px; font-weight: bold; padding-top: 40px; }
+.roll_list div .copy p{font-size: 18px; font-weight: bold; padding-top: 30px; }
 .roll_list div .copy .text{ padding-top: 20px; float: right; width: 700px; height: 156px;}
-.roll_list div .copy .text li{line-height: 24px; }
+.roll_list div .copy .text li{line-height: 28px; list-style: inside; }
 
 .roll_list .slick-dots {position: absolute; display: block; top: 60px; right: 0; width: 96px; /*bottom: 16px; text-align: center;*/ }
 .roll_list .slick-dots li {display: inline-block; width: 16px; height: 16px; margin: 6px;}
@@ -123,7 +128,7 @@
 .con3 .con3_1 .copy .sub li:last-child{padding-top: 20px; font-size: 12px; color: #999;}
 
 .con3 .con3_1 .point{width: 440px; height: 140px; margin: 0 auto; padding-top: 80px;}
-.con3 .con3_1 .point ul{float: left; padding-right: 70px;  }
+.con3 .con3_1 .point ul{float: left; padding-right: 60px; }
 .con3 .con3_1 .point ul:last-child{ padding-right: 0;}
 .con3 .con3_1 .point ul li{ text-align: center; padding-bottom: 10px;}
 .con3 .con3_1 .point ul li b{ font-size: 40px; color: #eb1c22;}
@@ -137,13 +142,13 @@
 .con3_2 .copy ul.tit {font-size: 18px; font-weight: bold;}
 .con3_2 .copy ul li.btn { float: right; font-size: 14px; color: #999; text-decoration: underline;}
 
-.con3_2 .results{width: 520px; float: left; padding-top:40px; margin: 0 50px;}
+.con3_2 .results{width: 520px; float: left; padding-top:40px; margin: 0 40px;}
 .con3_2 .results ul{width: 520px; height: 160px; }
 .con3_2 .results ul:last-child{width: 520px; height: 150px; padding-top: 50px; }
 
-.con3_2 .results ul li.img{float: left;}
-.con3_2 .results ul li.copy{float: right; width: 350px; height: 150px;}
-.con3_2 .results ul li.copy p{ font-weight: bold;}
+.con3_2 .results ul li.img{float: left; padding-top: 10px;}
+.con3_2 .results ul li.copy{float: right; width: 360px; height: 150px;}
+.con3_2 .results ul li.copy p{ font-weight: bold; padding-top: 10px;}
 
 .con3_2 .results ul li.copy b{ font-size: 40px; color: #eb1c22;}
 .con3_2 .results ul li.copy span{padding-top: 10px; }
@@ -152,7 +157,7 @@
 
 
 /* contents04 */
-.tab{ text-align: center; padding-top: 40px;}
+.tab{ text-align: center; padding-top: 60px;}
 .tab a{ font-weight: bold; font-size: 20px; padding-right: 60px;}
 .tab a:last-child{ padding-right: 0px;}
 .tab a:hover{color: #0056b7;}
@@ -170,7 +175,7 @@
 
 /* footer */
 .footer_nav{line-height: 50px; background: #5e5e5e;}
-.footer_nav a{padding-right: 20px;  color: #fafafa;}
+.footer_nav a{padding-right: 30px;  color: #fafafa;}
 .footer_nav .site{float: right; width: 250px; height: 50px; background: #525252;}
 .footer_nav .site ul {float: left; width: 160px; height: 50px; padding:0 20px;}
 .footer_nav .site ul li{float: left; color: #fff; }

@@ -14,17 +14,16 @@
 <body>
     <div id="wrap">
         <div id="header">
-            <div id="header_top">
-                <div class="container">
+            <div class="container">
+                <div class="header_top">
                     <div class="top_menu">
                         <a href="">홈</a>
                         <a href="">LH한국토지주택공사</a>
                         <a href="">글자크기</a>
                     </div>
                 </div>
-            </div>
-            <div id="header_nav">
-                <div class="container">
+                
+                <div class="header_nav">
                     <div class="gnb">
                         <a href=""><img src="images/ref_logo.png" alt="ref_logo"></a>
                         <div class="menu">
@@ -36,71 +35,71 @@
                             <a href=""><img src="images/search_ico.png" alt="search_ico"></a>
                             <a href=""><img src="images/menu_ico.png" alt="search_ico"></a>
                         </div>
-                        <div class="menu_all">
-                            <ul>
-                                <li>LH부동산금융사업소개</li>
-                                <li>현황 및 성과</li>
-                                <li>추친현황</li>
-                                <li>알림마당</li>
-                                <li>상담센터</li>
-                            </ul>
-                            <ul>
-                                <li>LH부동산금융사업소개</li>
-                                <li>현황 및 성과</li>
-                                <li>추친현황</li>
-                                <li>알림마당</li>
-                                <li>상담센터</li>
-                            </ul>
-                            <ul>
-                                <li>LH부동산금융사업소개</li>
-                                <li>현황 및 성과</li>
-                                <li>추친현황</li>
-                                <li>알림마당</li>
-                                <li>상담센터</li>
-                            </ul>
-                            <ul>
-                                <li>LH부동산금융사업소개</li>
-                                <li>현황 및 성과</li>
-                                <li>추친현황</li>
-                                <li>알림마당</li>
-                                <li>상담센터</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- //header -->
+         <!--  
+                    <div class="menu_all">
+                        <ul>
+                            <li>LH부동산금융사업소개</li>
+                            <li>현황 및 성과</li>
+                            <li>추친현황</li>
+                            <li>알림마당</li>
+                            <li>상담센터</li>
+                        </ul>
+                        <ul>
+                            <li>LH부동산금융사업소개</li>
+                            <li>현황 및 성과</li>
+                            <li>추친현황</li>
+                            <li>알림마당</li>
+                            <li>상담센터</li>
+                        </ul>
+                        <ul>
+                            <li>LH부동산금융사업소개</li>
+                            <li>현황 및 성과</li>
+                            <li>추친현황</li>
+                            <li>알림마당</li>
+                            <li>상담센터</li>
+                        </ul>
+                        <ul>
+                            <li>LH부동산금융사업소개</li>
+                            <li>현황 및 성과</li>
+                            <li>추친현황</li>
+                            <li>알림마당</li>
+                            <li>상담센터</li>
+                        </ul>
+                    </div>
+                    -->
+            <!-- //header -->
 
-        <div id="notice_list">
-            <div class="container">
-                <div class="notice">
-                    <ul>
-                        <li>공지사항 LH, 2020년 공동주택용지 공급계획 설명회 개최</li>
-                    </ul>
-                </div>
+        <div id="notice">
+            <div class="notice_list">
+                <ul>
+                    <li><strong>공지사항</strong></li>
+                    <li>LH, 2020년 공동주택용지 공급계획 설명회 개최</li>
+                </ul>
             </div>
         </div>
-        <!-- //notice_list -->    
+        
 
         <div id="banner">
-            <div class="ban">               
+            <div class="ban">   
                 <div>
-                    <div><img src="images/pc_ban01.png" alt=""></div>
-                    <div><img src="images/pc_ban02.png" alt=""></div>                    
-                </div>                
+                    <div class="ban_copy">   
+                        <ul>
+                            <li>리츠(REITs: REAL Estate Investment Trusts)란?</li> 
+                            <li>부동산 투자회사법에 따라 다수의 투자자(주택도시기금, LH, 기관투자자 등)로부터<br>
+                                자금을 모아 부동산에 투자ㆍ운용하고, 발생한 수익을 투자자에게 90%이상 배당하는 것을<br> 
+                                목적으로 설립하는 주식회사</li>
+                             <a href="" class="ghost-button">자세히 보기</a>  
+                        </ul>
+                    </div>
+                    <img src="images/pc_ban01.png" alt="">
+                </div>
+                
+                <div><img src="images/pc_ban02.png" alt=""></div>
             </div>
-              <!--  
-                <div class="ban_copy">
-                    <ul>
-                     <li>리츠(REITs: REAL Estate Investment Trusts)란?</li> 
-                     <li>부동산 투자회사법에 따라 다수의 투자자(주택도시기금, LH, 기관투자자 등)로부터<br>
-                         자금을 모아 부동산에 투자ㆍ운용하고, 발생한 수익을 투자자에게 90%이상 배당하는 것을<br> 
-                         목적으로 설립하는 주식회사</li> 
-                    </ul>
-                    <a href="" class="ghost-button">자세히 보기</a>  
-                 </div>
-                 -->
         </div>
         <!-- //banner -->
 
@@ -339,7 +338,7 @@
     <script type="text/javascript">
         //배너
         //html 마크업 셋팅 -> css 연동 --> 제이쿼리 연동 --> 제이쿼리 호출
-        $('.ban  ').slick({
+        $('.ban').slick({
             dots: true,
             infinite: true,
             autoplay: true,

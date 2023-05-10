@@ -72,26 +72,35 @@
         </div>
         <!-- //header -->
 
-        
-        <div id="banner">
-            <div class="ban">
-                <div class="ban_copy">
-                   <ul>
-                    <li>리츠(REITs: REAL Estate Investment Trusts)란?</li> 
-                    <li>부동산 투자회사법에 따라 다수의 투자자(주택도시기금, LH, 기관투자자 등)로부터<br>
-                        자금을 모아 부동산에 투자ㆍ운용하고, 발생한 수익을 투자자에게 90%이상 배당하는 것을<br> 
-                        목적으로 설립하는 주식회사</li> 
-                   </ul>
-                   <a href="" class="ghost-button">자세히 보기</a>  
-                </div>
-                
-                <div class="notice_list">
+        <div id="notice_list">
+            <div class="container">
+                <div class="notice">
                     <ul>
                         <li>공지사항 LH, 2020년 공동주택용지 공급계획 설명회 개최</li>
                     </ul>
                 </div>
-                <a href=""><img src="images/pc_ban01.png" alt=""></a>
             </div>
+        </div>
+        <!-- //notice_list -->    
+
+        <div id="banner">
+            <div class="ban">               
+                <div>
+                    <div><img src="images/pc_ban01.png" alt=""></div>
+                    <div><img src="images/pc_ban02.png" alt=""></div>                    
+                </div>                
+            </div>
+              <!--  
+                <div class="ban_copy">
+                    <ul>
+                     <li>리츠(REITs: REAL Estate Investment Trusts)란?</li> 
+                     <li>부동산 투자회사법에 따라 다수의 투자자(주택도시기금, LH, 기관투자자 등)로부터<br>
+                         자금을 모아 부동산에 투자ㆍ운용하고, 발생한 수익을 투자자에게 90%이상 배당하는 것을<br> 
+                         목적으로 설립하는 주식회사</li> 
+                    </ul>
+                    <a href="" class="ghost-button">자세히 보기</a>  
+                 </div>
+                 -->
         </div>
         <!-- //banner -->
 
@@ -294,7 +303,6 @@
                         <a href="">영상정보처리기기운영/관리방침</a>
                         <a href="">이메일무단수집거부</a>
                         <a href="">이용안내</a>
-                        <a href="">주요사이트</a>  
                         
                         <div class="site">
                             <ul>
@@ -302,7 +310,7 @@
                                 <li><a href=""><img src="images/plus.png" alt=""></a></li>                                
                             </ul>
                             <a href=""><img src="images/top_btn.png" alt=""></a>
-                        </div>
+                        </div>  
                     </div>
                 </div>                          
             </div>
@@ -331,6 +339,15 @@
     <script type="text/javascript">
         //배너
         //html 마크업 셋팅 -> css 연동 --> 제이쿼리 연동 --> 제이쿼리 호출
+        $('.ban  ').slick({
+            dots: true,
+            infinite: true,
+            autoplay: true,
+            autoplayspeed: 1000,
+            slidesToShow: 1,
+            adaptiveHeight: true
+        });
+
         $('.roll_list').slick({
             dots: true,
             infinite: true,

@@ -25,58 +25,58 @@
                 </div>
                 
                 <div class="header_nav">
-                    <div class="gnb">
+                    <div class="logo">
                         <a href=""><img src="images/ref_logo.png" alt="ref_logo"></a>
-                        <div class="menu_wrap" >
-                            <ul class="dep1">
-                                <li>
-                                    <a href="">LH부동산금융사업소개</a>
-                                    <ul class="dep2">
-                                        <li><a href="">리츠</a></li>
-                                        <li><a href="">PF 사업개요</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="">현황 및 성과</a>
-                                    <ul class="dep2">
-                                        <li><a href="">리츠사업 총괄 현황</a></li>
-                                        <li><a href="">리츠사업 추진 성과</a></li>
-                                        <li><a href="">리츠요약</a></li>
-                                    </ul>
-                                </li>                                
-                                <li>
-                                    <a href="">추친현황</a>
-                                    <ul class="dep2">
-                                        <li><a href="">개발형리츠</a></li>
-                                        <li><a href="">정책지원리츠</a></li>
-                                        <li><a href="">공공지원민간임대리츠</a></li>
-                                        <li><a href="">도시재생리츠</a></li>
-                                        <li><a href="">PF사업 지구별 세부내역</a></li>
-                                    </ul>
-                                </li>                                
-                                <li>
-                                    <a href="">알림마당</a>
-                                    <ul class="dep2">
-                                        <li><a href="">경영공시</a></li>
-                                        <li><a href="">공지사항</a></li>
-                                        <li><a href="">리츠뉴스</a></li>
-                                        <li><a href="">리츠영상</a></li>
-                                        <li><a href="">만화로 보는 리츠</a></li>
-                                    </ul>
-                                </li>     
-                                <li>
-                                    <a href="">상담센터</a>
-                                    <ul class="dep2">
-                                        <li><a href="">이메일 1:1문의</a></li>
-                                        <li><a href="">Q&A</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            
-                            <a href=""><img src="images/search_ico.png" alt="search_ico"></a>
-                            <a href=""><img src="images/menu_ico.png" alt="search_ico"></a>
-                            
-                        </div>
+                    </div>
+                    <nav class="nav" >
+                        <ul>
+                            <li>
+                                <a href="">LH부동산금융사업소개</a>
+                                <ul class="submenu1">
+                                    <li><a href="">리츠</a></li>
+                                    <li><a href="">PF 사업개요</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">현황 및 성과</a>
+                                <ul class="submenu2">
+                                    <li><a href="">리츠사업 총괄 현황</a></li>
+                                    <li><a href="">리츠사업 추진 성과</a></li>
+                                    <li><a href="">리츠요약</a></li>
+                                </ul>
+                            </li>                                
+                            <li>
+                                <a href="">추친현황</a>
+                                <ul class="submenu3">
+                                    <li><a href="">개발형리츠</a></li>
+                                    <li><a href="">정책지원리츠</a></li>
+                                    <li><a href="">공공지원민간임대리츠</a></li>
+                                    <li><a href="">도시재생리츠</a></li>
+                                    <li><a href="">PF사업 지구별 세부내역</a></li>
+                                </ul>
+                            </li>                                
+                            <li>
+                                <a href="">알림마당</a>
+                                <ul class="submenu4">
+                                    <li><a href="">경영공시</a></li>
+                                    <li><a href="">공지사항</a></li>
+                                    <li><a href="">리츠뉴스</a></li>
+                                    <li><a href="">리츠영상</a></li>
+                                    <li><a href="">만화로 보는 리츠</a></li>
+                                </ul>
+                            </li>     
+                            <li>
+                                <a href="">상담센터</a>
+                                <ul class="submenu5">
+                                    <li><a href="">이메일 1:1문의</a></li>
+                                    <li><a href="">Q&A</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="menu_btn">
+                        <a href=""><img src="images/search_ico.png" alt="search_ico"></a>
+                        <a href=""><img src="images/menu_ico.png" alt="search_ico"></a>
                     </div>
                 </div>
             </div>
@@ -375,10 +375,73 @@
 
     <!-- script -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script type="text/javascript">
-        
+        // $(function(){
+        //     $(".nav > ul >li").mouseover(function(){
+        //         $(this).find(".submenu").stop().slideDown();
+        //     });
+        //     $(".nav > ul >li").mouseout(function(){
+        //         $(this).find(".submenu").stop().slideUp();
+        //     });
+        // });
+
+        window.onload = function(){
+            let navList =document.querySelectorAll(".nav > ul >li");
+
+            navList.forEach(function(navItem){
+                navItem.addEventListener("mouseover", function(){
+                    this.querySelector(".submenu1").style.height = "82px"
+                });
+            });
+            navList.forEach(function(navItem){
+                navItem.addEventListener("mouseout", function(){
+                    this.querySelector(".submenu1").style.height = "0px"
+                });
+            });
+            navList.forEach(function(navItem){
+                navItem.addEventListener("mouseover", function(){
+                    this.querySelector(".submenu2").style.height = "124px"
+                });
+            });        
+            navList.forEach(function(navItem){
+                navItem.addEventListener("mouseout", function(){
+                    this.querySelector(".submenu2").style.height = "0px"
+                });
+            });  
+            navList.forEach(function(navItem){
+                navItem.addEventListener("mouseover", function(){
+                    this.querySelector(".submenu3").style.height = "204px"
+                });
+            });        
+            navList.forEach(function(navItem){
+                navItem.addEventListener("mouseout", function(){
+                    this.querySelector(".submenu3").style.height = "0px"
+                });
+            });  
+            navList.forEach(function(navItem){
+                navItem.addEventListener("mouseover", function(){
+                    this.querySelector(".submenu4").style.height = "204px"
+                });
+            });        
+            navList.forEach(function(navItem){
+                navItem.addEventListener("mouseout", function(){
+                    this.querySelector(".submenu4").style.height = "0px"
+                });
+            });  
+            navList.forEach(function(navItem){
+                navItem.addEventListener("mouseover", function(){
+                    this.querySelector(".submenu5").style.height = "82px"
+                });
+            });        
+            navList.forEach(function(navItem){
+                navItem.addEventListener("mouseout", function(){
+                    this.querySelector(".submenu5").style.height = "0px"
+                });
+            });              
+        }
+
         $('.ban').slick({
             dots: true,
             infinite: true,

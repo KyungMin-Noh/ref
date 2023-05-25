@@ -22,39 +22,39 @@
 
 /* header_top */
 .header_top{width: 1200px; height: 40px; } 
-.header_nav{width: 1200px; height: 80px; top: 40px;}
+.header_top .top_menu{float: right;}    
+.header_top .top_menu a{float: left; font-size: 14px; padding-left: 20px; line-height: 40px; color: #eee;}
+.header_nav {display: inline-block; width: 1200px;}
+.header_nav .logo{float: left; margin-right: 40px;}
+.header_nav .logo a{display: block;}
+.header_nav .nav_ico{float: right; line-height: 80px;}
+.header_nav .nav_ico > a{display:block; float: left; padding-left: 40px; line-height: 80px;}
+.header_nav .nav_ico > a:nth-child(1){padding-top: 6px;}
 
-.top_menu{float: right;}    
-.top_menu a{float: left; font-size: 14px; padding-left: 20px; line-height: 40px; color: #eee;}
+.header_nav .gnb > a{display: inline-block; text-align: center; height: 80px; margin-right: 40px;}
 
-.gnb{height: 80px; margin: 0 auto; }
-.gnb .menu{float: right; width: 1000px; height: 80px; line-height: 80px; color: #eee;}
-.gnb .menu ul{float: left; width: 150px; margin:0 20px; font-size: 16px; text-align: center;}
-.gnb .menu ul:nth-child(1) {width: 240px;}
-.gnb .menu > a{float: right; height: 80px; margin-left: 40px;}
-.gnb .menu > a img{padding-top: 30px;}
-.gnb .menu > a img:nth-child(1){padding-top: 26px;}
+.header_nav .nav{float: left; text-align: center; height: 80px; }
+.header_nav .nav > ul{display: flex; margin-top: 24px;}
+.header_nav .nav > ul > li{ position: relative;}
+.header_nav .nav > ul > li:last-child{margin-right: 0px; }
+.header_nav .nav > ul > li > a{display: inline-block; font-size: 16px; font-weight: bold; padding: 10px 40px; color: #fff; }
+.header_nav .nav > ul > li:nth-child(3) > a{padding: 10px 68px;}
+.header_nav .nav > ul > li > a:hover{color: #0056b7; background: #fff;}
+.header_nav .nav > ul > li > ul{display: none; position: absolute; top: 40px; width: 100%; text-align: center; background: #fafafa;}
+/* 자바스크립트용 CSS */
+.header_nav .nav > ul > li > ul.submenu1{display: block; height: 0; /*height: 82px;*/ overflow: hidden; transition: all 600ms;}
+.header_nav .nav > ul > li > ul.submenu2{display: block; height: 0; /*height: 124px;*/ overflow: hidden; transition: all 600ms;}
+.header_nav .nav > ul > li > ul.submenu3{display: block; height: 0; /*height: 204px;*/ overflow: hidden; transition: all 600ms;}
+.header_nav .nav > ul > li > ul.submenu4{display: block; height: 0; /*height: 204px;*/ overflow: hidden; transition: all 600ms;}
+.header_nav .nav > ul > li > ul.submenu5{display: block; height: 0; /*height: 82px;*/ overflow: hidden; transition: all 600ms;}
 
-.gnb .menu_wrap{float: right; height: 80px; }
-.gnb .menu_wrap .dep1{float: left; font-size: 0; }
-.gnb .menu_wrap .dep1 > li {display: inline-block; vertical-align: top; width: 150px; height: 80px; font-size: 16px; line-height: 80px; text-align: center; padding-right: 20px; }
-.gnb .menu_wrap .dep1 > li:nth-child(1){ width: 200px;}
-.gnb .menu_wrap .dep1 > li >a{display: block; color: #fff; }
-.gnb .menu_wrap .dep1 > li.menu_btn{display: inline-block;}
-.gnb .menu_wrap .dep1 > li.menu_btn >a{float: left;}
+.header_nav .nav > ul > li > ul > li > a{display: inline-block; padding: 10px; width: 100%;  box-sizing: border-box;  }
+.header_nav .nav > ul > li > ul > li > a:hover{ color: #333; background: #ececec; }
 
-.gnb .menu_wrap .dep2 > li:hover >a { background: #0056b7; color: #fff;} 
-.gnb .menu_wrap .dep2 > li:hover > .dep2{display: block;}
-.gnb .menu_wrap .dep2{display: none; background: #fafafa;  padding: 40px 0; }
-.gnb .menu_wrap .dep2 > li {display:block; height: 40px;}
-.gnb .menu_wrap .dep2 > li >a{display:block; font-size: 14px; line-height: 40px; }
-.gnb .menu_wrap .dep2 > li >a:hover{display:block; height: 40px; background: #0056b7; color: #fff;} 
+.header_nav .menu_btn {float: right; padding-top: 30px; }
+.header_nav .menu_btn > a{padding-left:20px; }
+.header_nav .menu_btn > a img {width: 24px; height: 24px;}
 
-.gnb .menu_wrap > a{display: inline-block; padding-left: 20px; vertical-align: middle; padding-top: 30px;}
-.gnb .menu_wrap > a:nth-child(1){top:4px ;}
-.gnb .menu_wrap .menu_btn{float: right;}
-.gnb .menu_wrap .menu_btn > li{float: left; padding-left: 20px;}
-.gnb .menu_wrap .menu_btn > li a{padding-left: 10px; width: 20px; height: 20px; }
 
 
 /* banner */
